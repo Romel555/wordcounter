@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<body>
+    <div class="header1">
+        <p>Word Counter Result</p>
+    </div>
+    <div class="result">
+    {% if text %}
+        <p>WORD COUNTED: <strong>{{ word_count }}</strong></p>
+        <p>TEXT ENTERED: <em>{{ text }}</em></p>
+    {% endif %}
+    </div>
+</body>
+</html>

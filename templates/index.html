@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header1">
+        <p>Word Counter</p>
+    </div>
+    <form action="/count_words" method="post">
+        <div class="box">
+        <label for="text">Type in your text inside the box</label>
+        </div>
+        <textarea name="text" id="text" rows="15" cols="50"></textarea>
+        <br>
+        
+        <input type="submit" value="Count Words">
+        
+    </form>
+</body>
+</html>
